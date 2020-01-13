@@ -24,9 +24,14 @@ class TodoForm extends React.Component {
         this.setState({todoText: ""})
     }
 
+    handleClear = e =>{
+        e.preventDefault();
+        this.props.clearItem()
+    }
+
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form>
                 Form
                 <input 
                 type="text"
@@ -34,8 +39,8 @@ class TodoForm extends React.Component {
                 onChange={this.handleChanges}
                 value={this.state.todoText}
                 />
-                <button>Add Todo</button>
-                <button>Clear Completed</button>
+                <button onClick={this.handleSubmit}>Add Todo</button>
+                <button onClick={this.handleClear}>Clear Completed</button>
             </form>
         )
     }
