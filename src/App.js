@@ -1,6 +1,8 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import './components/TodoComponents/Todo.css'
+
 
 const todo = [
   {
@@ -29,7 +31,7 @@ class App extends React.Component {
      // find the item we clicked on
     // toggle the purchased field
     // update state with the new grocery data
-    const newTodoList =this.state.todo.map(item => {
+    const newTodoList =this.state.todoList.map(item => {
 
       if(item.id === id) {
         return {
@@ -44,6 +46,19 @@ class App extends React.Component {
       this.setState({todoList : newTodoList })
 };
 
+  addItem = itemName => {
+    const newItem = {
+      task: itemName,
+      id: Date.now(),
+      completed: false
+    }
+
+    this.setState({
+      todoList: [...this.state.todoList, newItem]
+    })
+
+  }
+
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
   render() {
@@ -52,8 +67,8 @@ class App extends React.Component {
         <h2>Todo List</h2>
         <TodoList 
         todo={this.state.todoList}
-        toggleItem={toggleItem}/>
-        <TodoForm />
+        toggleItem={this.toggleItem}/>
+        <TodoForm addItem={this.addItem} />
       </div>
     );
   }

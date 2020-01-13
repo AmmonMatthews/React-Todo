@@ -1,0 +1,10 @@
+.todo{
+    background: teal;
+    width: 20%;
+
+}
+
+.todo.completed{
+    background-color: white;
+    text-decoration: line-through;
+}
