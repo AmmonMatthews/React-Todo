@@ -1,10 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+body{
+    background-image: url('../../img/nbg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 20%;    
+    
+}
+
 .todo{
-    background: teal;
-    width: 20%;
+   font-size: 2rem;
+    width: 20%
 
 }
 
 .todo.completed{
-    background-color: white;
+    
     text-decoration: line-through;
+}
+
+
+.list{
+    display: flex; 
+    justify-content: space-around;
 }

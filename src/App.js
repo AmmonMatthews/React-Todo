@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
-import './components/TodoComponents/Todo.css'
+
 
 
 const todo = [
@@ -65,24 +65,6 @@ class App extends React.Component {
     })
   }
 
-  // clear = () => {
-    
-  //   const clearItem = () => {
-    
-  //     this.state.todoList.filter(item => {
-  //       if (item.completed === true){
-  //         return  
-  //       } else {
-  //         return item;
-  //       }
-  
-  //     })
-  //   }
-
-  //   clearItem();
-  // }
-
- 
 
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
@@ -90,7 +72,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>Todo List</h2>
-        <TodoList 
+        <TodoList
         todo={this.state.todoList}
         toggleItem={this.toggleItem}/>
         <TodoForm addItem={this.addItem} 

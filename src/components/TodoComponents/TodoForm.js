@@ -31,8 +31,8 @@ class TodoForm extends React.Component {
 
     render(){
         return(
-            <form>
-                Form
+            <form className="form">
+                
                 <input 
                 type="text"
                 name="todo"
