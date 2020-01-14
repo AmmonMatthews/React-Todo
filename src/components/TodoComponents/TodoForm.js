@@ -38,9 +38,11 @@ class TodoForm extends React.Component {
                 name="todo"
                 onChange={this.handleChanges}
                 value={this.state.todoText}
+                placeholder="New Todo"
                 />
-                <button onClick={this.handleSubmit}>Add Todo</button>
-                <button onClick={this.handleClear}>Clear Completed</button>
+                <br/>
+                <button className="button" onClick={this.handleSubmit}>Add Todo</button>
+                <button className="button" onClick={this.handleClear}>Clear Completed</button>
             </form>
         )
     }

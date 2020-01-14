@@ -6,13 +6,23 @@ import TodoForm from './components/TodoComponents/TodoForm';
 
 const todo = [
   {
-    task: 'Organize Garage',
+    task: 'Study',
     id: 1528817077286,
     completed: false
   },
   {
-    task: 'Bake Cookies',
+    task: 'Read',
     id: 1528817084358,
+    completed: false
+  },
+  {
+    task: 'Homework',
+    id: 1528817084357,
+    completed: false
+  },
+  {
+    task: 'Family Time',
+    id: 1528817084356,
     completed: false
   }
 ];
