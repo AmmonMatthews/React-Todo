@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url('../../img/nbg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 20%;    
+    
+}
+h2{
+    font-size: 5rem;
+    text-align: center;
+    color: #39ff14;
+}
+
+.todo{
+   font-size: 2rem;
+    width: 30%
+
+}
+
+.todo.completed{
+    
+    text-decoration: line-through;
+}
+
+
+.list{
+    display: flex; 
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 50%;
+    margin: 0 auto;
+    background: #39ff14;
+    border-radius: 10px;
+}
+
+.button{
+    width: 30%;
+    border-radius: 10px;
+    background-color: #39ff14;
+    font-size: 1.5rem;
+}
+.form{
+    margin: 5% 0 0 30%;
+
+}
+
+.form input{
+    padding: .5% 19.5%;
+    font-size: 1.25rem;
+}
